@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+<script>
+function Hello(){
+    var newWin=window.open("","","width=400,height=300"), str="",
+    f = document.getElementById("f").value, n  = document.getElementById("n").value;
+    str += '<IMG src="buket-48.jpg" width="125" height="82" alt =""><BR>';
+    str += ' Примите в подарок этот букет"!<BR>';
+    str += '<INPUT type="button" value="закрыть" onClick="window.close();">';
+    newWin.document.write("Добро пожаловать, "+n+" "+f+"<br>"+str);
+}
+</script>
+</head>
+<body>
+    <form>
+        <label>Фамилия<input type='text' value="" size="25" id='f'></label>
+        <label>Имя<input type='text' value="" size="25" id='n'></label>
+        <input type='button' value="Привет" size="25"  onClick="Hello()">
+    </form>
+</body>
+</html>
